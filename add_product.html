@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="javascript/add.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="add_product.html">Insertar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="show_all.html">Mostrar todo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delete.html">Eliminar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-sm-8 p-5">
+        <form id="formulario">
+            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre del producto">
+            <input type="number" class="form-control" id="unidades" name="unidades" step="1" placeholder="Unidades">
+            <input type="number" class="form-control" id="precio" name="precio" step="0.01" placeholder="Precio">
+            <input type="date" class="form-control" id="fechaCompra" name="fechaCompra">
+        </form>
+        <button class="btn btn-success" id="boton" name="boton" onclick="enviarDatos()">Guardar</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
